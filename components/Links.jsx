@@ -24,7 +24,7 @@ const Links = () => {
     {
       id: 1,
       name: 'Dashboard',
-      link: '#',
+      link: '/',
       icon: <BsHouseDoor />
     },
     {
