@@ -1,0 +1,387 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  /* background-color: #F5D0FE; */
+  background: linear-gradient(100deg,
+      #f1c48c 30%,
+      #f5b1b3 60%,
+      #cea5cc 90%);
+  color: #171717;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.row-cols-auto>* {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1>* {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2>* {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3>* {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.row-cols-4>* {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.row-cols-5>* {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.row-cols-6>* {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .col-md {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-md-auto>* {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-md-1>* {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-md-3>* {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-md-4>* {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-md-5>* {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-md-6>* {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-md-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.min-h-95 {
+  min-height: 95vh;
+}
+
+
+/* Circular Styles */
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px white) !important;
+}
+
+.CircularProgressbar {
+  overflow: visible !important;
+  max-width: 5rem !important;
+}
+
+.CircularProgressbar-trail {
+  display: none !important;
+}
+
+.CircularProgressbar-text {
+  fill: white !important;
+}
+
+/*  */
+
+.orders-approved {
+  background-color: #BBF7D0;
+  color: #166534;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0 .25rem;
+}
+
+.orders-pending {
+  background-color: #FEF08A;
+  color: #A16207;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0 .25rem;
+}
+
+.orders-rejected {
+  background-color: #FECACA;
+  color: #991B1B;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0 .25rem;
+}
+
+.orders-delivered {
+  background-color: #BAE6FD;
+  color: #075985;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0 .25rem;
+}
+
+.pos-rel {
+  position: relative !important;
+}
+
+.nav-icon-count {
+  position: absolute !important;
+  bottom: 0px;
+  right: 0px;
+  top: 15px;
+}
+
+.trans-all {
+  transition: all .3s;
+}
+
+.scaleup-05:hover {
+  transform: scale(1.05);
+}
+
+.scaleup-10:hover {
+  transform: scale(1.1);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* MY GRADIENTS */
+
+.purple-gradient {
+  background: linear-gradient(180deg,
+      #b472f7,
+      #c18ef3);
+}
+
+.pink-gradient {
+  background: linear-gradient(180deg,
+      #FB7185,
+      #f78697);
+}
+
+.orange-gradient {
+  background: linear-gradient(180deg,
+      #FB923C,
+      #f89e54);
+}
+
+.bg-transparent-3 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/*  */
+
+.linksmobile {
+  z-index: 100;
+  height: 100%;
+  width: 250px !important;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  background-color: #f1c48c !important;
+  padding: 3rem 0;
+  transition: all .3s;
+}
+
+.mobiletoggle {
+  position: fixed !important;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
