@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { ordersData } from '@/data'
 
@@ -8,21 +9,21 @@ const LatestOrders = () => {
   return (
     <div className='bg-transparent-3 p-2 rounded-2xl'>
       <p className='mt-5 mb-3 text-2xl'>
-        Latest orders
+        آخرین سفارش‌ها
       </p>
       <div className="row p-3 rounded-2xl">
 
         <div className="col-3">
-          Product
+          محصول
         </div>
         <div className="col-3">
-          ID
+          شناسه
         </div>
         <div className="col-3">
-          Date
+          تاریخ
         </div>
         <div className="col-3">
-          State
+          وضعیت
         </div>
         <hr className='w-75' />
       </div>
