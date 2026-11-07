@@ -1,3 +1,4 @@
+
 "use client"
 
 import './globals.css'
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
 
 
   return (
-    <html lang="en">
+    <html lang="fa">
 
       <body className={inter.className}>
         <span className='md:hidden' onClick={() => { setMobileLinksShow(!mobileLinksShow) }}>
@@ -42,7 +43,7 @@ export default function RootLayout({ children }) {
           <div className="row bg-transparent-3 rounded-3xl min-h-95">
             <div className="col-md-2 py-3 hidden md:block">
               <h2 className='text-2xl mb-12 mt-5 p-3' >
-                Admin Panel
+                پنل مدیریت
               </h2>
               <div className='hidden md:block'>
                 <Links />
