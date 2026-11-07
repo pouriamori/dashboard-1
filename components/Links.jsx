@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -23,31 +24,31 @@ const Links = () => {
   const data = [
     {
       id: 1,
-      name: 'Dashboard',
+      name: 'داشبورد',
       link: '',
       icon: <BsHouseDoor />
     },
     {
       id: 2,
-      name: 'Charts',
+      name: 'نمودارها',
       link: '/charts',
       icon: <BsBarChart />
     },
     {
       id: 3,
-      name: 'Orders',
+      name: 'سفارش‌ها',
       link: '/orders',
       icon: <BsBasket2 />
     },
     {
       id: 4,
-      name: 'Customers',
+      name: 'مشتریان',
       link: '/customers',
       icon: <BsPeople />
     },
     {
       id: 5,
-      name: 'Products',
+      name: 'محصولات',
       link: '/products',
       icon: <BsBox />
     },
