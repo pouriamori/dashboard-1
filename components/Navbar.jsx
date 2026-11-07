@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {
   BsPersonCircle, BsBellFill, BsFillChatDotsFill
@@ -14,10 +15,10 @@ const Navbar = () => {
         </div>
         <div className='text-center'>
           <p>
-            Pouria morovati
+            پوریا مروتی
           </p>
           <p className='text-sm'>
-            Admin
+            مدیر
           </p>
         </div>
       </div>
