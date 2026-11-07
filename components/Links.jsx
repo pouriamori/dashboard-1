@@ -16,16 +16,13 @@ import {
 
 import { useState } from 'react'
 
-
-
-
 const Links = () => {
 
   const data = [
     {
       id: 1,
       name: 'داشبورد',
-      link: '',
+      link: '/',
       icon: <BsHouseDoor />
     },
     {
@@ -55,7 +52,6 @@ const Links = () => {
   ];
 
   const [selected, setSelected] = useState(0);
-
 
   return (
     <ul className='flex flex-col gap-7'>
