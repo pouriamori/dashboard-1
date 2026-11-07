@@ -22,7 +22,7 @@ const Links = () => {
     {
       id: 1,
       name: 'داشبورد',
-      link: '/',
+      link: '/dashboard-1/',
       icon: <BsHouseDoor />
     },
     {
@@ -56,10 +56,15 @@ const Links = () => {
   return (
     <ul className='flex flex-col gap-7'>
       {data.map((item, index) => {
+        const Tag = item.id === 1 ? 'a' : Link;
+
         return (
-          <Link href={item.link} key={item.id}
+          <Tag
+            href={item.link}
+            key={item.id}
             onClick={() => { setSelected(index) }}
-            className={`py-2 ${index === selected ? 'bg-red-400 rounded-r-xl' : ''}`}>
+            className={`py-2 ${index === selected ? 'bg-red-400 rounded-r-xl' : ''}`}
+          >
             <li className='flex gap-4 items-center px-5'>
               <span className='text-xl'>
                 {item.icon}
@@ -68,7 +73,7 @@ const Links = () => {
                 {item.name}
               </span>
             </li>
-          </Link>
+          </Tag>
         )
       })}
     </ul>
