@@ -1,3 +1,4 @@
+
 "use client"
 
 import {
@@ -23,7 +24,7 @@ const SalesCard = () => {
             14,200
           </p>
           <p className='text-sm'>
-            In the last 24 hours
+            در ۲۴ ساعت گذشته
           </p>
         </div>
         <div className='flex flex-col justify-between items-end'>
